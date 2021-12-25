@@ -3,10 +3,10 @@
 import requests, json,sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pysnooper
-from lib.Params import Params
-from lib.mylog import mylogger
-from lib.aws_api import Aws_api 
-from lib.toffs_api import Toffs_api
+from Params import Params
+from mylog import mylogger
+from aws_api import Aws_api 
+from toffs_api import Toffs_api
 from dateutil.tz import tzutc
 import yaml
 import datetime
