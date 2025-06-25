@@ -371,6 +371,6 @@ class Main:
               self.refresh_domain_cache()
 
 if __name__ == '__main__':
-    with open('./conf/conf.yaml','r') as Openyaml_file:
+    with open('./conf.yaml','r') as Openyaml_file:
          loadYaml_file = yaml.safe_load(Openyaml_file.read())
          start = Main(token=loadYaml_file['toffs_api']['token'],email=loadYaml_file['toffs_api']['email'],account_id=loadYaml_file['toffs_api']['account_id']).toffs_menu()
